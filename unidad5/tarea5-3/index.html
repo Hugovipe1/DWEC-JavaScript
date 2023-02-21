@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hugo Vicente Peligro">
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css
+">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="" id="form">
+        <fieldset>
+            <legend>Obligatoriedad</legend><br /><br />
+            <label for="texto">Texto: </label><input type="text" name="texto" id="texto" data-tipo="texto"><span></span><br /><br />
+            <label for="checkbox">Checkbox</label><input name="checkbox"  type="checkbox" id="checkbox" data-tipo="checkbox"><span></span><br /><br />
+            <div id="contenedor">
+                <div>
+                    <input type="radio" id="mas" name="genero" data-tipo="radio"><label for="mas">masculino</label>
+                    <input type="radio" id="fem" name="genero" data-tipo="radio"><label for="fem">femenino</label><br /><br />
+                </div>
+                <span></span>
+            </div>
+
+            <label for="select">Seleccionado</label>
+            <select  id="select" data-tipo="select">
+                <option value="">Selecciona</option>
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+                <option value="3">Opción 3</option>
+            </select>
+            <span></span><br /><br />
+            <label for="fecha">Fecha seleccionada: </label><input name="fecha" type="date" id="fecha" data-tipo="date"><span></span><br /><br />
+        </fieldset>
+        <br /><br />
+        <label for="numEntero">Número entero: </label><input name="numeroentero" type="text" data-tipo="numEntero" id="numEntero"><span></span><br /><br />
+        <label for="numDecimal">Número decimal: </label><input name="numerodec" type="text" id="numDecimal" data-tipo="numDecimal"><span></span><br /><br />
+        <label for="correo">Correo electrónico: </label><input name="correo" type="text" id="correo" data-tipo="correo"><span></span><br /><br />
+        <label for="url">URL: </label><input name="url" type="text" id="url" data-tipo="url"><span></span><br /><br />
+        <label for="fecharegex">Fecha: </label><input name="fecharegex" data-tipo="fecha" type="text"
+            id="fechaRegex"><span></span><br /><br />
+        <label for="dni">DNI: </label><input name="dni" type="text" data-tipo="dni" id="dni"><span></span><br /><br />
+        <label for="telefono">Teléfono: </label><input name="telefono" data-tipo="telefono" type="text"
+            id="telefono"><span></span><br /><br />
+        <input type="submit">
+        <input type="reset">
+        <button id="boton">Rellenar</button>
+    </form>
+    <div id="bien"></div>
+</body>
+
+</html>
